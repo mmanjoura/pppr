@@ -10,7 +10,7 @@ import (
 	"github.com/boombuler/barcode/qr"
 	"github.com/jung-kurt/gofpdf"
 	"github.com/jung-kurt/gofpdf/contrib/barcode"
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 )
 
 //GeneratePdf ...
@@ -50,7 +50,7 @@ func GeneratePdf(pyts []Payment, hdr []string, conf decoder.Config, mid string) 
 		}
 
 	}
-	err := savePDF(pdf, conf.DropFolder+mid+"Pdfoutput")
+	err := savePDF(pdf, conf.DropFolder+mid+"-"+time.Now().Format("20060102150405")+"-Pdfoutput")
 	if err != nil {
 		log.Fatalf("Cannot save PDF: %s|n", err)
 

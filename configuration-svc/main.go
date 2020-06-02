@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/jakewright/muxinator"
-	"github.com/mmanjoura/pppr/configuration/controller"
-	"github.com/mmanjoura/pppr/configuration/domain"
-	"github.com/mmanjoura/pppr/configuration/service"
+	"github.com/mmanjoura/pppr/configuration-svc/controller"
+	"github.com/mmanjoura/pppr/configuration-svc/domain"
+	"github.com/mmanjoura/pppr/configuration-svc/service"
 )
 
 // http://localhost:8081/read/base

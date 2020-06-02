@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 	"github.com/mmanjoura/pppr/payment"
 	paymentpb "github.com/mmanjoura/pppr/payment/proto"
 	"github.com/mmanjoura/pppr/payment/repository/mongo"

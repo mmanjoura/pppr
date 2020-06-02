@@ -12,7 +12,7 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 	"github.com/mmanjoura/pppr/logging"
 	"github.com/mmanjoura/pppr/logging/api"
 	"github.com/mmanjoura/pppr/logging/repository/mongo"

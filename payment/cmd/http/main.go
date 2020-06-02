@@ -12,7 +12,7 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 	"github.com/mmanjoura/pppr/payment"
 	"github.com/mmanjoura/pppr/payment/api"
 	"github.com/mmanjoura/pppr/payment/repository/mongo"

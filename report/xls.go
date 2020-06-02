@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 )
 
 func writeXlsHeader(hdr []string) *excelize.File {
@@ -45,7 +45,7 @@ func GenerateXls(pyts []Payment, hdr []string, conf decoder.Config, mid string) 
 
 	}
 
-	if err := f.SaveAs(conf.DropFolder + mid + "xlxoutput.xlsx"); err != nil {
+	if err := f.SaveAs(conf.DropFolder + mid + "-" + time.Now().Format("20060102150405") + "-xlxoutput.xlsx"); err != nil {
 		fmt.Println(err)
 
 	}

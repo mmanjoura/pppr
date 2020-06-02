@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/mmanjoura/pppr/configuration/domain"
+	"github.com/mmanjoura/pppr/configuration-svc/domain"
 )
 
 type ConfigService struct {

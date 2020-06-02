@@ -16,7 +16,7 @@ import (
 	"github.com/mmanjoura/pppr/acquirer"
 	"github.com/mmanjoura/pppr/acquirer/api"
 	"github.com/mmanjoura/pppr/acquirer/repository/mongo"
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 )
 
 func main() {

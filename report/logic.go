@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 	"github.com/mmanjoura/pppr/logging"
 	loggingpb "github.com/mmanjoura/pppr/logging/proto"
 	errs "github.com/pkg/errors"

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 )
 
 func writeHeader(pyts []Payment, hdr []string) [][]string {
@@ -50,7 +50,7 @@ func GenerateCsv(pyts []Payment, hdr []string, conf decoder.Config, mid string) 
 
 	}
 
-	writeCsvFile(conf.DropFolder+mid+"csvoutput.csv", data)
+	writeCsvFile(conf.DropFolder+mid+"-"+time.Now().Format("20060102150405")+"-csvoutput.csv", data)
 	return returnVal
 
 }

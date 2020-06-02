@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 	"github.com/mmanjoura/pppr/logging"
 	"github.com/mmanjoura/pppr/transaction"
 	"github.com/mmanjoura/pppr/transaction/repository/mongo"

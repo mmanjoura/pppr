@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/mmanjoura/pppr/configuration/domain"
+	"github.com/mmanjoura/pppr/configuration-svc/domain"
 )
 
 // Controller exports the handlers for the endpoints

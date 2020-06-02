@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/mmanjoura/pppr/configuration/decoder"
+	"github.com/mmanjoura/pppr/configuration-svc/decoder"
 	"github.com/mmanjoura/pppr/logging"
 	loggingpb "github.com/mmanjoura/pppr/logging/proto"
 	reportpb "github.com/mmanjoura/pppr/report/proto"
