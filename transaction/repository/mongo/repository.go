@@ -2,7 +2,6 @@ package mongo
 
 import (
 	"context"
-	"fmt"
 	"time"
 
 	"github.com/mmanjoura/pppr/transaction"
@@ -93,7 +92,7 @@ func (r *mongoRepository) Get(date, time string) ([]string, error) {
 
 		if tempAcquirer != trx.AcquirerID {
 			acquirers = append(acquirers, trx.AcquirerID)
-			fmt.Println(trx.AcquirerID)
+			//fmt.Println(trx.AcquirerID)
 		}
 		tempAcquirer = trx.AcquirerID
 

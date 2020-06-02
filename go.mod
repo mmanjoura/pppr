@@ -1,10 +1,11 @@
-module golang.org/x/pppr
+module github.com/mmanjoura/pppr
 
 go 1.14
 
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/ahmetb/go-linq v3.0.0+incompatible
+	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/blevesearch/bleve v1.0.9 // indirect
 	github.com/boltdb/bolt v1.3.1 // indirect
 	github.com/boombuler/barcode v1.0.0
@@ -16,6 +17,7 @@ require (
 	github.com/facebookgo/stack v0.0.0-20160209184415-751773369052 // indirect
 	github.com/facebookgo/subset v0.0.0-20200203212716-c811ad88dec4 // indirect
 	github.com/go-chi/chi v4.1.1+incompatible
+	github.com/go-chi/cors v1.1.1
 	github.com/gofrs/uuid v3.3.0+incompatible // indirect
 	github.com/golang/protobuf v1.4.2
 	github.com/google/uuid v1.1.1
@@ -24,7 +26,6 @@ require (
 	github.com/jakewright/muxinator v0.0.0-20190505163137-fedb92b26321
 	github.com/jmhodges/levigo v1.0.0 // indirect
 	github.com/jung-kurt/gofpdf v1.16.2
-	github.com/mmanjoura/pppr v0.0.0-20200522182851-04476cb80672
 	github.com/nilslice/email v0.1.0 // indirect
 	github.com/nilslice/jwt v1.0.0 // indirect
 	github.com/pieterclaerhout/go-finance v1.0.4
@@ -32,6 +33,7 @@ require (
 	github.com/ponzu-cms/ponzu v0.11.0
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/spf13/cobra v1.0.0
+	github.com/swaggo/swag v1.6.6
 	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c // indirect
 	github.com/tidwall/sjson v1.1.1 // indirect
 	github.com/urfave/negroni v1.0.0 // indirect

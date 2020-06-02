@@ -74,7 +74,7 @@ func main() {
 
 			// For each unique dateTime run payment
 			for t, d := range dateTime {
-				fmt.Printf("date map: %s", dateTime)
+				//fmt.Printf("date map: %s", dateTime)
 				runParams := transaction.RunParams{}
 				if len(d) > 0 {
 
@@ -93,8 +93,8 @@ func main() {
 
 					fmt.Println("Imported TXF files successful at: ", time.Now().Format(time.RFC3339))
 
-					fmt.Println(d)
-					fmt.Println(t)
+					//fmt.Println(d)
+					//fmt.Println(t)
 
 					runParams.CreatedDate = d
 					runParams.CreatedTime = t
@@ -108,7 +108,7 @@ func main() {
 						}
 						runParams.AcquirerID = acqID
 
-						fmt.Printf("acquirers IDS: %s", acqID)
+						//fmt.Printf("acquirers IDS: %s", acqID)
 
 						fmt.Println("Calling Payment RPC server at: ", time.Now().Format(time.RFC3339))
 
