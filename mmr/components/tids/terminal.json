@@ -9,6 +9,18 @@
     "Tid": {
       "type": "string",
       "required": true
+    },
+    "Model": {
+      "type": "string",
+      "required": true
+    },
+    "Rental_Rate": {
+      "type": "decimal",
+      "required": true
+    },
+    "Is_Integrated": {
+      "type": "boolean",
+      "required": true
     }
   }
 }

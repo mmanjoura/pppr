@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acquirers",
+  "info": {
+    "name": "acquirer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Acquirer_ID": {
+      "type": "uid"
+    },
+    "merchants": {
+      "collection": "merchant"
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

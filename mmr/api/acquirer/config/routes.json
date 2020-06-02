@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/acquirers",
+      "handler": "acquirer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acquirers/count",
+      "handler": "acquirer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acquirers/:id",
+      "handler": "acquirer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/acquirers",
+      "handler": "acquirer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/acquirers/:id",
+      "handler": "acquirer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/acquirers/:id",
+      "handler": "acquirer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
