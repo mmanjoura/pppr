@@ -1,0 +1,28 @@
+// protoc payment.proto --go_out=plugins=grpc:.
+
+syntax = "proto3";
+
+package payment;
+
+option go_package = "paymentpb";
+
+message Payment {
+    string AcquirerId = 1;
+	string StartDate = 2;
+	string EndDate = 3;
+
+}
+
+
+
+message RunPaymentReq {
+    Payment payment = 1; 
+}
+
+message RunPaymentRes {
+    Payment payment = 1; 
+}
+
+service PaymentService {
+    rpc RunPayment(RunPaymentReq) returns (RunPaymentRes);
+}

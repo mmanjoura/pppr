@@ -1,0 +1,83 @@
+base:
+  apiGateway: http://service.api-gateway
+  MmsEndPoint : /api/content?type=Acquirer&id=5
+	MmsBaseURL : http://localhost:8080
+  redis:
+    dbHost: redis
+    port: 6379
+    redisUrl: redis://localhost
+  mongo:
+    dbHost: mongo
+    port: 27017
+    mongoUrl: mongodb://localhost
+    mongoTimeout: 30
+  Bolt:
+    dbHost: bolt
+    port: 0000
+    path: ""
+
+service.logging:
+  httpServer: localhost
+  gRPCServer: localhost
+  httpport: 8000
+  gRPCPort: 50050
+  dbHost: mongo
+  dbName: pppr_Db
+  collectionName: logs
+
+service.transaction:
+  httpServer: localhost
+  gRPCServer: localhost
+  httpport: 8010
+  gRPCPort: 50060
+  sourcePath: ../../../responsefiles/dataFiles/
+  archivePath: ../../../responsefiles/archive/
+  scanInterval: 30
+  dbHost: mongo
+  dbName: pppr_Db
+  collectionName: transactions
+
+service.payment:
+  httpServer: localhost
+  gRPCServer: localhost
+  httpport: 8020
+  gRPCPort: 50070
+  dbHost: mongo
+  dbName: pppr_services_Db
+  collectionName: payments
+
+service.report:
+  httpServer: localhost
+  gRPCServer: localhost
+  httpport: 8030
+  gRPCPort: 50080
+  dbHost: mongo
+  dbName: pppr_Db
+  collectionName: reports
+  reportimages: ../../../images/
+  dropfolder: \\iedc-inf-pfv008\SFBShareDR_Backup\FIPS-POS\Reports\
+
+service.acquirer:
+  httpServer: localhost
+  gRPCServer: localhost
+  httpport: 8040
+  gRPCPort: 50090
+  dbHost: mongo
+  dbName: pppr_Db
+  collectionName: ""
+
+service.drg:
+  httpServer: localhost
+  gRPCServer: localhost
+  httpport: 8050
+  gRPCPort: 50100
+  scanInterval: 86400
+  dbHost: mongo
+  dbName: pppr_Db
+  collectionName: "rates"
+
+ 
+
+
+ 
+

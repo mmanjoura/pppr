@@ -1,0 +1,31 @@
+// protoc logging.proto --go_out=plugins=grpc:.
+
+syntax = "proto3";
+
+package logging;
+
+option go_package = "github.com/mmanjoura/pppr/logging/proto/loggingpb";
+
+message Log {
+    string CreatedDate = 1;
+    string CreatedTime = 2;
+    string Level = 3;
+    string ServiceName = 4;
+    string CallingMethod = 5;
+    string Host = 6;
+    string Body = 7;
+    string Latency = 8;
+
+}
+
+message SaveLogReq {
+    Log Log = 1;
+}
+
+message SaveLogRes {
+    Log Log = 1;
+}
+
+service LogService {
+    rpc SaveLog(SaveLogReq) returns (SaveLogRes);
+}
