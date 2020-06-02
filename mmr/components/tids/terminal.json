@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_tid_terminals",
+  "info": {
+    "name": "Terminal",
+    "icon": "table"
+  },
+  "options": {},
+  "attributes": {
+    "Tid": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

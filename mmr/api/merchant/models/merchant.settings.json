@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "merchants",
+  "info": {
+    "name": "merchant"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Mid": {
+      "type": "string",
+      "required": true
+    },
+    "Terminal": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tids.terminal"
+    },
+    "bank_details": {
+      "collection": "bank-details"
+    },
+    "schemes": {
+      "collection": "scheme"
+    }
+  }
+}

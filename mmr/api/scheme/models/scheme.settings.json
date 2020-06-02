@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schemes",
+  "info": {
+    "name": "scheme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "price_option": {
+      "model": "price-option"
+    }
+  }
+}

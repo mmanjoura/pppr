@@ -293,7 +293,7 @@ func CreateTemplate(hd []string) (gofpdf.Template, *gofpdf.Fpdf) {
 
 	template := pdf.CreateTemplate(func(tpl *gofpdf.Tpl) {
 
-		tpl.Image("planetlogo.png", 6, 6, 10, 0, false, "", 0, "")
+		tpl.Image("planetlogo.png", 6, 6, 8, 8, false, "", 0, "")
 
 		// Planet Address
 		planetAddress(tpl)
